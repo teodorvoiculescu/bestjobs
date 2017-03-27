@@ -1,3 +1,5 @@
+package pageObjects;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -10,7 +12,6 @@ import java.io.IOException;
 import java.util.Properties;
 
 public class BestJobsHelper {
-
     public static void waitUntilXpathElementIsVisible(WebDriver driver, String locator) {
         WebDriverWait wait = new WebDriverWait(driver, 20);
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(locator)));
@@ -36,11 +37,22 @@ public class BestJobsHelper {
         //load properties file
         try {
             prop.load(fileInput);
-            locatorFromFile=  prop.getProperty(locator);
+            locatorFromFile = prop.getProperty(locator);
         } catch (IOException e) {
             e.printStackTrace();
         }
 
-       return locatorFromFile;
+        return locatorFromFile;
     }
+
+
+
+    public static void sleep(int time) {
+        try {
+            Thread.sleep(time);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
 }
