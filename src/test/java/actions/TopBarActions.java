@@ -9,7 +9,7 @@ public class TopBarActions {
     }
 
     public static String get_login_button_text() {
-       return TopBarPage.getLoginButton().getText();
+        return TopBarPage.getLoginButton().getText();
     }
 
     public static void click_employers_button() {
@@ -17,7 +17,7 @@ public class TopBarActions {
     }
 
     public static String get_employers_button_text() {
-       return TopBarPage.getEmployersButton().getText();
+        return TopBarPage.getEmployersButton().getText();
     }
 
     public static void click_newjob_button() {
@@ -25,7 +25,7 @@ public class TopBarActions {
     }
 
     public static String get_newjob_button_text() {
-       return TopBarPage.getNewJobButton().getText();
+        return TopBarPage.getNewJobButton().getText();
     }
 
     public static void click_register_button() {
@@ -33,6 +33,6 @@ public class TopBarActions {
     }
 
     public static String get_register_button_text() {
-       return TopBarPage.getRegisterButton().getText();
+        return TopBarPage.getRegisterButton().getText();
     }
 }

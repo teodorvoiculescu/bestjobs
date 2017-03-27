@@ -18,6 +18,6 @@ public class TopBarPage extends Hook {
         return driver.findElement(By.xpath(BestJobsHelper.getLocatorFromFile("top-bar-register")));
     }
     public static WebElement getLoginButton(){
-        return driver.findElement(By.cssSelector(BestJobsHelper.getLocatorFromFile("top-bar-login")));
+        return driver.findElement(By.xpath(BestJobsHelper.getLocatorFromFile("top-bar-login")));
     }
 }
